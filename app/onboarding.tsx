@@ -3,9 +3,9 @@ import React from "react";
 
 const onboarding = () => {
   return(
-    <view>
-      <text>Onboarding via pamela</text>
-    </view>
+    <View>
+      <Text>Onboarding</Text>
+    </View>
   )
 }
 export default onboarding
