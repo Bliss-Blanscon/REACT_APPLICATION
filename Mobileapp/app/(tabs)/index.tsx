@@ -1,15 +1,16 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ScrollView } from 'react-native'
 import React from 'react'
 import Feather from '@expo/vector-icons/Feather';
 
 const person = require("@/assets/images/person.png")
 const Filter = require('@/assets/images/filter.png')
-
-
+const Woman1 = require('@/assets/images/young woman working online.png')
+const Woman2 = require('@/assets/images/young woman working at desk.png')
 
 const index = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
+    <View >
       
 
       {/* header for Hello Devs */}
@@ -55,18 +56,42 @@ const index = () => {
 {/* Categories Section */}
         <View style={styles.categorySec}>
           <View>
-            <Text>Categories</Text>
+            <Text style={styles.catText}>Categories</Text>
           </View>
 
           {/* Category Templates */}
+          <View style={styles.catImages}>
+            <View style={styles.woman11}>
+              <View style={styles.texts}>
+                <Text style={styles.exercise}>Exercise</Text>
+                <Text style={styles.subExercise}>12 Tasks</Text>
+              </View>
+<Image source={Woman1} style={styles.woman1}/>
+</View>
+
+<View style={styles.woman111}>
+<View style={styles.texts}>
+                <Text style={styles.exercise}>Study</Text>
+                <Text style={styles.subExercise}>12 Tasks</Text>
+              </View>
+<Image source={Woman2}/>
+</View>
+          </View>
+
+        </View>
+
+
+        {/* Ongoing View Section */}
+        <View>
           <View>
-            
+            <Text>Ongoing Task</Text>
           </View>
 
         </View>
 
 
     </View>
+    </ScrollView>
   )
 }
 
@@ -143,6 +168,65 @@ fontSize: 32,
     marginLeft:11,
     width:24,
     height:24
+  },
+  categorySec:{
+    marginTop:30,
+    marginBottom:12,
+    
+  },
+  catText:{
+    fontWeight:700,
+    fontSize:20
+  },
+  catImages:{
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    marginTop:12,
+    
+  },
+  woman11:{
+    width:186,
+    height:192,
+    backgroundColor:'#FBF9F7',
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
+    borderRadius:15
+
+    
+  },
+  woman1:{
+    width:151,
+    height:132,
+    
+  },
+  texts:{
+    width:70,
+    height:35,
+    marginLeft:16,
+    marginTop:14,
+    marginRight:111,
+  
+  },
+  exercise:{
+    fontWeight:700,
+    fontSize:16
+  },
+  subExercise:{
+    fontWeight:400,
+    fontSize:12
+  },
+  woman111:{
+    marginLeft:24,
+    width:186,
+    height:192,
+    backgroundColor:'#FBF9F7',
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
+    borderRadius:15
   }
   
   
