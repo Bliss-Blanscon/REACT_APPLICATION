@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {StyleSheet, Text, TouchableOpacity, ScrollView,View, Image, ImageBackground, Button, Pressable, Modal, StatusBar, ActivityIndicator } from "react-native";
+import {StyleSheet, Text, TouchableOpacity, ScrollView,View, Image, ImageBackground, Button, Pressable, Modal, StatusBar, ActivityIndicator, Alert } from "react-native";
 const logoImg = require("@/assets/images/adaptive-icon.png"); 
 
 
@@ -9,11 +9,30 @@ export default function Index() {
  return (
      <View style={{flex:1, backgroundColor: "plum", padding: 60}}>
     <StatusBar  backgroundColor="purple" barStyle="light-content" />
-<ActivityIndicator />
+{/* <ActivityIndicator />
 <ActivityIndicator size="large" />
-<ActivityIndicator size="large" color="midnightblue" animating={false}/>
+<ActivityIndicator size="large" color="midnightblue" animating={true}/> */}
 
       <ScrollView>
+{/* 
+        <Button title="Alert" onPress={() => Alert.alert("Invalid data!...")}/>
+        <Button title="Alert" onPress={() => Alert.alert("Invalid data!...", "DOB is incorrect")}/>
+        <Button title="Alert" onPress={() => Alert.alert("Invalid data!...","DOB is incorrect",[
+          {
+            text: "Cancel",
+            onPress:()=> console.log("Cancel pressed")
+          },
+          {
+            text: "OK",
+            onPress:()=> console.log("Ok pressed")
+          },
+          {
+            text: "Restart",
+            onPress:()=> console.log("Restarting App"),
+          },
+          
+        ])}/> */}
+
 
 {/* Lets Study Buttons */}
 {/* <View>
