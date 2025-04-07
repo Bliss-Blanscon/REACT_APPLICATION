@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ScrollView, StatusBar } from 'react-native'
 import React from 'react'
 import Feather from '@expo/vector-icons/Feather';
 
@@ -11,7 +11,7 @@ const index = () => {
   return (
     <ScrollView style={styles.container}>
     <View >
-      
+      <StatusBar barStyle={"light-content"} backgroundColor={"black"}/>
 
       {/* header for Hello Devs */}
         <View style={styles.header}>
@@ -82,12 +82,30 @@ const index = () => {
 
 
         {/* Ongoing View Section */}
-        <View>
+        <View style={styles.ongoing_view}>
           <View>
-            <Text>Ongoing Task</Text>
+            <Text style={styles.taskon}>Ongoing Task</Text>
           </View>
+        <TouchableOpacity>
+          <View style={styles.ongoing}>
+              <Text style={styles.mainon}>Mobile App Development</Text>
+            </View>
+            </TouchableOpacity>
 
+            <TouchableOpacity>
+            <View style={styles.ongoing}>
+              <Text style={styles.mainon}>Web Development</Text>
+            </View>
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+            <View  style={styles.ongoing}>
+              <Text style={styles.mainon}>Push Ups</Text>
+            </View>
+            </TouchableOpacity>
         </View>
+
+
 
 
     </View>
@@ -227,6 +245,38 @@ fontSize: 32,
     justifyContent:'center',
     alignItems:'center',
     borderRadius:15
+  },
+  ongoing:{
+width: 354,
+height:128,
+paddingTop: 46,
+paddingBottom:63,
+paddingRight: 138,
+paddingLeft:16,
+borderRadius:15,
+backgroundColor:"#FBF9F7",
+marginTop:12,
+marginRight:12,
+borderWidth:1,
+borderColor:"#E8D1BA"
+
+
+  },
+  mainon:{
+fontSize:16,
+color:"#000000",
+fontWeight:700,
+
+  },
+  taskon:{
+fontWeight:700,
+fontSize:20,
+paddingTop:27
+
+  },
+  ongoing_view:{
+paddingRight:12
+
   }
   
   

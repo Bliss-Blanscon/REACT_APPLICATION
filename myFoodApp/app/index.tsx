@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {StyleSheet, Text, TouchableOpacity, ScrollView,View, Image, ImageBackground, Button, Pressable, Modal, StatusBar, ActivityIndicator, Alert } from "react-native";
+import Greet from '../app/components/Greet'
 const logoImg = require("@/assets/images/adaptive-icon.png"); 
 
 
@@ -13,7 +14,17 @@ export default function Index() {
 <ActivityIndicator size="large" />
 <ActivityIndicator size="large" color="midnightblue" animating={true}/> */}
 
+
+<Pressable onPress={()=> console.log("you paa")} >
+<Greet name={"pamela"} />
+</Pressable>
+
       <ScrollView>
+
+
+
+
+
 {/* 
         <Button title="Alert" onPress={() => Alert.alert("Invalid data!...")}/>
         <Button title="Alert" onPress={() => Alert.alert("Invalid data!...", "DOB is incorrect")}/>
@@ -102,5 +113,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. In, obcaecati optio. Ha
  
  
  
- const styles = StyleSheet.create({})
+ const styles = StyleSheet.create({
+pressme:{
+  color: "red"
+}
+
+ })
  
