@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {StyleSheet, Text, TouchableOpacity, ScrollView,View, Image, ImageBackground, Button, Pressable, Modal, StatusBar, ActivityIndicator, Alert } from "react-native";
-import Greet from '../app/components/Greet'
+import Greet from '../components/Greet'
 const logoImg = require("@/assets/images/adaptive-icon.png"); 
 
 
@@ -9,7 +9,10 @@ export default function Index() {
   const [isModalVisible, setIsModalVisible] =useState(false);
  return (
      <View style={{flex:1, backgroundColor: "plum", padding: 60}}>
+
     <StatusBar  backgroundColor="purple" barStyle="light-content" />
+    <ScrollView>
+
 {/* <ActivityIndicator />
 <ActivityIndicator size="large" />
 <ActivityIndicator size="large" color="midnightblue" animating={true}/> */}
@@ -19,8 +22,18 @@ export default function Index() {
 <Greet name={"pamela"} />
 </Pressable>
 
-      <ScrollView>
 
+
+{/* Box shadow */}
+<View style={styles.box}>
+  <Text>hello there</Text>
+</View>
+
+<View style={styles.box}>
+  <Text>hello there</Text>
+</View>
+
+   
 
 
 
@@ -116,7 +129,29 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. In, obcaecati optio. Ha
  const styles = StyleSheet.create({
 pressme:{
   color: "red"
-}
+},
+box:{
+  width:250,
+  height:250,
+  backgroundColor:"green",
+  justifyContent:"center",
+  textAlign:"center",
+  alignItems:"center",
+  paddingVertical:20,
+  paddingHorizontal:10,
+  marginVertical:10,
+  borderWidth:2,
+  borderColor:"purple",
+  borderRadius:5,
+  color:"white",
+  shadowColor:"blue",
+  shadowOffset:{
+    width:6,
+    height:6
+  },
+  shadowOpacity:.6,
+  shadowRadius:4
+},
 
  })
  
