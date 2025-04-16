@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {StyleSheet, Text, TouchableOpacity, ScrollView,View, Image, ImageBackground, Button, Pressable, Modal, StatusBar, ActivityIndicator, Alert } from "react-native";
 import Greet from '../components/Greet'
+import Box from '../compo/Box'
 const logoImg = require("@/assets/images/adaptive-icon.png"); 
 
 
@@ -12,7 +13,15 @@ export default function Index() {
 
     <StatusBar  backgroundColor="purple" barStyle="light-content" />
     <ScrollView>
-
+<Box style={{backgroundColor: "#ab9156"}}> Box 4</Box>
+    <Box style={{backgroundColor: "#6b0803"}}> Box 5</Box>
+    <Box style={{backgroundColor: "#1c4c56"}}> Box 6</Box>
+    <Box style={{backgroundColor: "#b95f21"}}> Box 7</Box>
+    <Box style={{backgroundColor: "#1c4c56"}}> Box 8</Box>
+    <Box style={{backgroundColor: "#ab9156"}}> Box 9</Box>
+    <Box style={{backgroundColor: "#6b0803"}}> Box 10</Box>
+    <Box style={{backgroundColor: "#8e9b00"}}> Box 11</Box>
+    <Box style={{backgroundColor: "#b65d1f"}}> Box 12</Box>
 {/* <ActivityIndicator />
 <ActivityIndicator size="large" />
 <ActivityIndicator size="large" color="midnightblue" animating={true}/> */}

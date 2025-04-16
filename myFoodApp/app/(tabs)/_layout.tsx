@@ -14,6 +14,12 @@ export default function RootLayout() {
       title:"About"
     }}
     />
+    <Tabs.Screen
+    name="dynamic"
+    options={{headerShown:false,
+      title: "Dynamics"
+    }}
+    />
   </Tabs>;
   
 }
