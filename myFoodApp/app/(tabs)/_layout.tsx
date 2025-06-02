@@ -20,6 +20,14 @@ export default function RootLayout() {
       title: "Dynamics"
     }}
     />
+
+<Tabs.Screen
+name="safeAreaView"
+options={{headerShown:false,
+  title:"Safe View"
+}}
+/>
+
   </Tabs>;
   
 }

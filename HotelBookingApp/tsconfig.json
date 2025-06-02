@@ -12,7 +12,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts",
-    "nativewind-env.d.ts"
-, "app/CustomButtons/CustomButtons.android.js", "app/CustomButtons/CustomButtons.ios.js"  ]
+    "expo-env.d.ts"
+  ]
 }

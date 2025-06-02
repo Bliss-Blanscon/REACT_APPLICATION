@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet } from "react-native-web";
+import { View, Text, StyleSheet } from "react-native";
 
 export default function Box( {children, style}){
   return(
     <View style={[styles.box, style]}>
-          <Text style={styles.text}>{children}</Text>
+          <Text style={styles.man}>{children}</Text>
         </View>
   )
 }
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     height: 100,
     width:100
   },
-  text:{
+  man:{
     fontSize:24,
     fontWeight:"bold",
     textAlign:"center",
