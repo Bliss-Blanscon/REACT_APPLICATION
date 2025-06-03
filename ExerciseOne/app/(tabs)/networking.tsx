@@ -1,4 +1,4 @@
-import { FlatList, SafeAreaView, StatusBar, StyleSheet, View, Text, ActivityIndicator } from 'react-native'
+import { FlatList, SafeAreaView, StatusBar, StyleSheet, View, Text, ActivityIndicator, TextInput, Button } from 'react-native'
 import { useState, useEffect } from 'react'
 import React from 'react'
 
@@ -6,6 +6,11 @@ const networking = () => {
   const [postList, setPostList] = useState([])
 const [isLoading, setisLoading] = useState(true)
 const [refreshing, setRefreshing] = useState(false)
+const [postTitle, setPostTitle] = useState("")
+const [postBody, setPostBody] = useState("")
+const [isPosting, setIsPosting] = useState(false)
+
+
 
 
   const fetchData = async (limit =10) =>{
@@ -28,6 +33,13 @@ const [refreshing, setRefreshing] = useState(false)
     setRefreshing(false)
   }
 
+  const addpost = async()=> {
+setIsPosting(true)
+
+const response = await fetch= (``)
+
+  }
+
 if(isLoading){
   return(
     <SafeAreaView style={styles.loadingContainer}>
@@ -38,7 +50,20 @@ if(isLoading){
 }
   return (
    <SafeAreaView style={styles.container}>
+
     <>
+
+    
+    <View >
+
+      <TextInput style={ styles.postTittle} value={postTitle} onChangeText={setPostTitle} placeholder='Post Title'/>
+      <TextInput style={ styles.postBody} value={postBody} onChangeText={setPostBody} placeholder='Post Body'/>
+      <Button title={isPosting ? "Adding..." : "Add post"}  onPress={addPost} disabled={isPosting}/>
+
+    </View>
+
+
+
     <View style={styles.listContainer}>
 <FlatList
 data={postList}
