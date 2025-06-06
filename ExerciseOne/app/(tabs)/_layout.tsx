@@ -39,6 +39,13 @@ const _layout = () => {
         title:"Network"
       }}
       />
+
+      <Tabs.Screen
+      name='Navigation'
+      options={{headerShown:false,
+        title:"Navigation"
+      }}
+      />
       </Tabs>
   )
 }
