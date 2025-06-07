@@ -1,4 +1,5 @@
 import { StyleSheet, Text, SafeAreaView } from 'react-native'
+import { StatusBar } from 'expo-status-bar'
 import React from 'react'
 
 const Screens = () => {
