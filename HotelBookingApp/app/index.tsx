@@ -8,7 +8,7 @@ const Stack = createNativeStackNavigator();
 export default function index() {
   return(
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="About" >
         <Stack.Screen name="Home" component={Screens} />
       </Stack.Navigator>
     </NavigationContainer>
