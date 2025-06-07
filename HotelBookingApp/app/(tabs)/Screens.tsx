@@ -1,15 +1,46 @@
-import { StyleSheet, Text, SafeAreaView } from 'react-native'
+import { StyleSheet, Text, SafeAreaView, Touchable, Pressable, View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import React from 'react'
 
 const Screens = () => {
   return (
-    <SafeAreaView>
-      <Text>Screens</Text>
+    <SafeAreaView style={styles.container}>
+   <StatusBar style='light'/>
+      <Pressable style={styles.touchContainer}>
+    <Text style={styles.text}>Continue</Text>
+   </Pressable>
+   
+   
+      
+      
+     
     </SafeAreaView>
   )
 }
 
 export default Screens
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'black',
+  paddingHorizontal:20,
+    justifyContent: 'center',
+    
+  },
+  touchContainer:{
+    backgroundColor:'#1dbb54',
+    padding:20,
+    borderRadius:30,
+    color:'white',
+ alignItems:'center',
+   
+  },
+  text:{
+    color:'white',
+    fontSize:20,
+    fontWeight:'bold',
+    
+  }
+  
+})

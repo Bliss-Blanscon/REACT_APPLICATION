@@ -9,7 +9,7 @@ export default function index() {
   return(
     <NavigationContainer>
       <Stack.Navigator initialRouteName="About" >
-        <Stack.Screen name="Home" component={Screens} />
+        <Stack.Screen name="Home" component={Screens} options={{headerShown:false}} />
       </Stack.Navigator>
     </NavigationContainer>
   )

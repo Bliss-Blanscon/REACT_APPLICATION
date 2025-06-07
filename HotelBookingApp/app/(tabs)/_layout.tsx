@@ -7,7 +7,7 @@ const _layout = () => {
    <Tabs>
     <Tabs.Screen
     name='Screens'
-    options={{headerShown: true,
+    options={{headerShown: false,
       title:"Home"
     }}
     />
