@@ -6,15 +6,10 @@ const Screens = () => {
   return (
     <SafeAreaView style={styles.container}>
    <StatusBar style='light'/>
-      <Pressable style={styles.touchContainer}>
+      <Pressable style={styles.touchContainer} onPress={() =>console.log("pressed")}>
     <Text style={styles.text}>Continue</Text>
    </Pressable>
-   
-   
-      
-      
-     
-    </SafeAreaView>
+   </SafeAreaView>
   )
 }
 
@@ -40,7 +35,8 @@ const styles = StyleSheet.create({
     color:'white',
     fontSize:20,
     fontWeight:'bold',
-    
+
   }
+  
   
 })
