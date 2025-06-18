@@ -17,6 +17,20 @@ const _layout = () => {
       title:"About"
     }}
     />
+
+
+     <Tabs.Screen
+    name='assign'
+    options={{headerShown: false,
+      title:"Assign"
+    }}
+    />
+    <Tabs.Screen
+    name='flatList'
+    options={{headerShown: false,
+      title:"FlatList"
+    }}
+    />
    </Tabs>
   )
 }
