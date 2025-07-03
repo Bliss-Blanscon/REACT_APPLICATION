@@ -1,5 +1,4 @@
-import { StyleSheet, Text, View, SafeAreaView, Button, StatusBar, Pressable, Image} from 'react-native';
-import React from 'react';
+import { StyleSheet, Text, View, SafeAreaView, StatusBar, Pressable, Image} from 'react-native';
 import shopImage from './assets/shopify1.jpg'
 
 
