@@ -264,7 +264,7 @@ fontWeight:"bold"
 {/* Doctors Roles */}
 <View style={{
   marginTop:48,
-  marginBottom:48
+  marginBottom:48,
 }}>
 
   <View style={[styles.careYou]}>
@@ -274,7 +274,23 @@ fontWeight:"bold"
 
 
 {/* Image view and texts */}
-  <View>
+<View style={{
+  display:"flex",
+  flexDirection:"row",
+  alignItems:"center",
+  justifyContent:"space-evenly",
+  marginRight:16,
+  width:760.14,
+  height:437,
+}}>
+
+  {/* first doctor profile */}
+  <View style={{
+    width:237.14,
+    height:408,
+    marginLeft:-330,
+     marginRight:-76,
+  }}>
     <Image style={{width:254,
       height:281,
     }} source={require('@/assets/images/doctor1.png')}/>
@@ -332,16 +348,198 @@ alignItems:"center",
   alignItems:"center",
   justifyContent:"center",
   backgroundColor:'rgba(31, 43, 108, 1)',
+  borderRadius:5
+
 }}>
   <Text style={{
     textAlign:"center",
     color:'rgba(191, 210, 248, 1)',
-  }}>View Profile</Text>
+}}>View Profile</Text>
 </Pressable>
   </View>
-  {/* end of image view */}
-</View>
 
+
+
+
+
+{/* second doctor profile */}
+   <View style={{
+   }}>
+    <Image style={{width:254,
+      height:281,
+    }} source={require('@/assets/images/doctor1.png')}/>
+
+    <View>
+      <View style={{
+        width:254,
+        height:110,
+        alignItems:"center",
+        justifyContent:"center",
+        backgroundColor:'rgba(191, 210, 248, 1)',
+      }}>
+        <Text style={{
+          color:'rgba(31, 43, 108, 1)',
+          fontSize:18
+        }}>Doctor's Name</Text>
+
+
+        <Text style={{
+          color:'rgba(31, 43, 108, 1)',
+          fontWeight:"bold",
+          letterSpacing:4,
+          fontSize:20,
+          paddingBottom:8
+        }}>NEUROLOGY</Text>
+
+
+<View style={{display:"flex",
+  flexDirection:"row",
+justifyContent:"center",
+alignItems:"center",
+}}>
+<Image style={{
+  marginRight:20
+    }} source={require('@/assets/images/linkedin.png')}/>
+
+<Image style={{
+    marginRight:20
+
+    }} source={require('@/assets/images/fb.png')}/>
+
+
+<Image style={{
+    }} source={require('@/assets/images/insta.png')}/>
+
+</View>
+      </View>
+    </View>
+
+
+{/* View Profile */}
+<Pressable style={{
+  width:254,
+  height:46,
+  alignItems:"center",
+  justifyContent:"center",
+  backgroundColor:'rgba(31, 43, 108, 1)',
+  borderRadius:5
+
+}}>
+  <Text style={{
+    textAlign:"center",
+    color:'rgba(191, 210, 248, 1)',
+}}>View Profile</Text>
+</Pressable>
+  </View>
+
+
+
+{/* third doctor profile */}
+   <View style={{
+    
+   }}>
+    <Image style={{width:254,
+      height:281,
+    }} source={require('@/assets/images/doctor1.png')}/>
+
+    <View>
+      <View style={{
+        width:254,
+        height:110,
+        alignItems:"center",
+        justifyContent:"center",
+        backgroundColor:'rgba(191, 210, 248, 1)',
+      }}>
+        <Text style={{
+          color:'rgba(31, 43, 108, 1)',
+          fontSize:18
+        }}>Doctor's Name</Text>
+
+
+        <Text style={{
+          color:'rgba(31, 43, 108, 1)',
+          fontWeight:"bold",
+          letterSpacing:4,
+          fontSize:20,
+          paddingBottom:8
+        }}>NEUROLOGY</Text>
+
+
+<View style={{display:"flex",
+  flexDirection:"row",
+justifyContent:"center",
+alignItems:"center",
+}}>
+<Image style={{
+  marginRight:20
+    }} source={require('@/assets/images/linkedin.png')}/>
+
+<Image style={{
+    marginRight:20
+
+    }} source={require('@/assets/images/fb.png')}/>
+
+
+<Image style={{
+    }} source={require('@/assets/images/insta.png')}/>
+
+</View>
+      </View>
+    </View>
+
+
+{/* View Profile */}
+<Pressable style={{
+  width:254,
+  height:46,
+  alignItems:"center",
+  justifyContent:"center",
+  backgroundColor:'rgba(31, 43, 108, 1)',
+  borderRadius:5
+
+}}>
+  <Text style={{
+    textAlign:"center",
+    color:'rgba(191, 210, 248, 1)',
+}}>View Profile</Text>
+</Pressable>
+  </View>
+  </View>
+  {/* end of image view */}
+
+  
+
+    <Pressable style={{
+    display:"flex",
+    flexDirection:"row",
+    marginTop:45,
+    alignItems:"center",
+    justifyContent:"center"
+  }}    
+  
+  onPress={()=>alert("Home girrrlllll")}
+  
+  >
+    <Image style={{
+      marginRight:8
+    }} source={require('@/assets/images/lb.png')}/>
+    <Image source={require('@/assets/images/db.png')}/>
+    <Image style={{
+      marginLeft:8
+    }} source={require('@/assets/images/lb.png')}/>
+</Pressable>
+
+</View>
+{/* end of doctors role */}
+
+
+{/* Better information */}
+ <View style={[styles.careYou]}>
+    <Text style={styles.careYou1}>BETTER INFORMATION</Text>
+    <Text style={styles.careYou1}>BETTER HEALTH</Text>
+  <Text style={styles.careYou2}>Our Doctors</Text>
+  </View>
+{/* End of Better information */}
 
     </ScrollView>
    
